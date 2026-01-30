@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3 Drill 1</title>
+
+    <!--START OF CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--START OF BOOTSTRAP 5-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+</head> 
+<body>
+    <div class="container text-center">
+        <h1>Basic Calculator</h1>
+        <p>Click the button</p>
+        <p id="answerkey">The answer is:</p>
+
+        <!-- CALC -->
+            <button type="button" class="btn btn-success" onclick="
+                let Var$1 = 6;
+                let Var$2 = 8;
+                let the$correct_product = Var$1 * Var$2;
+                document .getElementById('answerkey').innerHTML = 'is: ' + the$correct_product;
+            ">Calculate</button>
+
+        <!-- REFRESH -->
+            <button type="button" class="btn btn-danger" onclick="window.location.reload()">Refresh</button>  
+    </div>
+</body>
+</html>
